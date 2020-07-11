@@ -1,0 +1,20 @@
+.content-1 {
+   width: 350px;
+   height: 420px;
+   background: var(--azul);
+   margin: auto;
+   position: relative;
+}
+
+.content-1::before {
+   content: '';
+   display: block;
+   width: 0;
+   height: 0;
+   background: linear-gradient(60% rgba(240, 570, 255, .5),
+         rgba(120, 230, 100, .5));
+   border-top: 30px solid #3A5659;
+   border-left: 30px solid #3A5659;
+   border-right: 30px solid #3A5659;
+   border-bottom: 30px solid #3A5659;
+}

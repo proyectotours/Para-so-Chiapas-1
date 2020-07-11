@@ -1,0 +1,148 @@
+@import url(fontello.css);
+@import url(animation.css);
+@import url(fontello-codes.css);
+@import url(fontello-embedded.css);
+@import url(fontello-ie7-codes.css);
+@import url(fontello-ie7.css);
+@import url(input.css);
+@import url(before.css);
+@import url(registro.css);
+
+:root {
+   --header: #535353;
+   --colorLight: #4693D4;
+   --colorInput: #dddddd;
+   --menuPrincipal: #BC1111;
+   --lightblue: #52A1D9;
+   /* azul cielo*/
+   --mostasa: #CA9206;
+   /* mostasa */
+   --verde: #24730B;
+   /* verde oscuro */
+   --azul: #0073A6;
+   /* azul oscuro*/
+   --blaco: #FFFFFF;
+   --greyLigth: #D3D3D3;
+   --grey: #F2F2F2;
+   /* gris suave*/
+   --negrolight: #54545475;
+   --hover: #C4C4C4;
+   --negro: #000000;
+   --colorBusqueda: #0A86D1;
+   --negroSuabe: rgba(0, 0, 0, .5);
+   --greenyellow: #72CB56:
+      /* verde limon */
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: var(--grey);
+}
+
+/* estilos menu */
+.header {
+   background: transparent;
+   width: 100%;
+   height: auto;
+   box-shadow: 0 0 5px grey;
+}
+
+.container_menu {
+   width: 95%;
+   margin: auto;
+}
+
+.container-logo-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.navigation ul {
+   list-style: none;
+}
+
+.navigation ul li {
+   display: inline-block;
+   background: transparent;
+   margin: 5px 2px;
+   box-sizing: border-box;
+}
+
+.navigation ul li a {
+   padding: .5rem .7rem;
+   text-decoration: none;
+   letter-spacing: 3px;
+   display: block;
+   color: var(--colorLight);
+   text-transform: uppercase;
+   transition: all .5s linear;
+}
+
+.navigation ul li a:hover {
+   background: transparent;
+   color: var(--colorLight);
+}
+
+@media screen and (max-width: 768px) {
+
+   /* estilos menu */
+   .navigation {
+      width: 100%;
+   }
+
+   .navigation ul li {
+      display: block;
+      margin-bottom: 3px;
+      position: relative;
+   }
+
+   .navigation ul li:hover::before {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid var(--colorLight);
+      border-bottom: 10px solid transparent;
+      position: absolute;
+      top: calc(50% - 10px);
+      right: 10px;
+   }
+
+   .navigation ul li a {
+      display: block;
+      padding: .5rem 0;
+      margin: 0;
+   }
+
+   .toggle {
+      display: block;
+      padding: 5px 10px;
+      border: .5px solid rgba(255, 255, 255, .3);
+   }
+
+   .toggle span {
+      width: 40px;
+      height: 3px;
+      margin: 5px;
+      background: var(--colorLight);
+      display: block;
+   }
+
+   .navigation ul {
+      display: none;
+   }
+
+   .navigation ul.active {
+      display: block;
+      transition: all .6s ease-in-out;
+   }
+}
