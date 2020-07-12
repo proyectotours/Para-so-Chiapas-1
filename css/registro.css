@@ -42,20 +42,19 @@
 
 .input-48,
 .input-100 {
-   width: 100%;
+   width: 85%;
    padding: 2px 20px;
    margin-bottom: 20px;
    line-height: 2.4;
-   border-radius: 0px;
+   border-radius: 5px;
    background: #f0f0f0;
-   box-shadow: inset 5px 5px 8px #606060,
-      inset -5px -5px 8px #606060;
+   border: 0;
+   background: #E1E1E1;
 }
 
 .btn-enviar {
    padding: 7px 10px;
    border-radius: 0px;
    background: #f0f0f0;
-   box-shadow: inset 5px 5px 8px #606060,
-      inset -5px -5px 8px #ffffff;
+  
 }

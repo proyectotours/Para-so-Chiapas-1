@@ -1,12 +1,9 @@
 @import url(fontello.css);
-@import url(animation.css);
-@import url(fontello-codes.css);
-@import url(fontello-embedded.css);
-@import url(fontello-ie7-codes.css);
-@import url(fontello-ie7.css);
+@import url(normalize.css);
 @import url(input.css);
 @import url(before.css);
 @import url(registro.css);
+@import url(social.css);
 
 :root {
    --header: #535353;
@@ -34,11 +31,11 @@
       /* verde limon */
 }
 
-* {
+   /* *{ 
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-}
+}*/
 
 body {
    background: var(--grey);
@@ -66,6 +63,9 @@ body {
 
 .navigation ul {
    list-style: none;
+   padding-left: 0;
+   margin-top: 0;
+   margin-bottom: 0;
 }
 
 .navigation ul li {
